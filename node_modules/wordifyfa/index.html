@@ -1,0 +1,65 @@
+﻿<html>
+
+<head>
+    <meta http-equiv="Content-Language" content="fa">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body>
+    <script src="dist/wordifyfa.js"></script>
+    <script>
+        var a = 500000;
+        var b = wordifyfa(a);
+        document.write(a + ' = ' + b + "<br/>");
+
+        var c = wordifyRials(a);
+        document.write(a + ' = ' + c + "<br/>");
+
+        var d = wordifyRialsInTomans(a);
+        document.write(a + ' = ' + d + "<br/>");
+
+        var e = -500;
+        var f = wordifyfa(e);
+        document.write(e + ' = ' + f + "<br/>");
+
+        var g = -2200;
+        var h = wordifyRialsInTomans(g);
+        document.write(g + ' = ' + h + "<br/>");
+
+        h = wordifyRials(g);
+        document.write(g + ' = ' + h + "<br/>");
+
+        var i = '120,530,102';
+        var j = wordifyfa(i);
+        document.write(i + ' = ' + j + "<br/>");
+
+        var k = "-210120";
+        var l = wordifyfa(k);
+        document.write(k + ' = ' + l + "<br/>");
+
+        var m = '۱۲۰۰۰۰';
+        var n = wordifyfa(m);
+        document.write(m + ' = ' + n + "<br/>");
+
+        var e = wordifyMomentApprox(new Date(2022,4,4,10,20,0));
+        document.write(e + "<br/>");
+        var f = wordifyMomentApprox(new Date(2022,4,4,10,20,0), new Date(2022,4,4,10,21,0), "گذشته","آینده"); 
+        document.write(f + "<br/>");
+        var g = wordifyMomentApprox(new Date(2022,4,4,10,21,0), new Date(2022,4,4,10,20,0), "گذشته","آینده"); 
+        document.write(g + "<br/>");
+        var h = wordifyMomentApprox("2022-05-04 10:20:00");
+        document.write(h + "<br/>");
+
+        var i = momentApprox(new Date(2022,4,4,10,20,0));
+        document.write(i + "<br/>");
+
+        var j = wordifyMomentPrecise("2022-05-04 10:20:00");
+        document.write(j + "<br/>");
+
+        var k = momentPrecise(new Date(2022,4,4,10,20,0));
+        document.write(k + "<br/>");
+
+    </script>
+</body>
+
+</html>
